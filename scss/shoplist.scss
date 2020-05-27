@@ -1,0 +1,95 @@
+body {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+.shoplist-main-container {
+	width: 50%;
+	height: 500px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border: solid 1px grey;
+
+	.shoplist-input-container {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		position: relative;
+		// margin-bottom: auto;
+		.shoplist-entry-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			input,
+			button {
+				height: 40px;
+				margin: 0;
+			}
+			input {
+				width: 70%;
+			}
+			button {
+				width: 20%;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.shoplist-list-container {
+		width: 90%;
+		margin-bottom: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		.shoplist-col-titles {
+			display: flex;
+			width: 90%;
+			.hdr-item {
+				width: 60%;
+				padding-left: 10px;
+				box-sizing: border-box;
+			}
+			.hdr-qty {
+				width: 20%;
+				text-align: center;
+			}
+		}
+
+		.list-item {
+			display: flex;
+			align-items: center;
+			width: 90%;
+			height: 55px;
+			padding-left: 10px;
+			box-sizing: border-box;
+			border: solid 1px grey;
+			border-radius: 5px;
+			margin: 5px 0;
+			h2 {
+				width: 60%;
+			}
+			.item-counter-component {
+				width: 20%;
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
+
+			.trash {
+				width: 20%;
+				text-align: center;
+			}
+			.trash:hover,
+			.add:hover,
+			.sub:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
